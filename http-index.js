@@ -7,7 +7,7 @@ http.createServer((request, response) => {
     body.push(chunk);
   }).on('end', () => {
     body = Buffer.concat(body).toString();
-    inlineCss(body, {url: "https://example.com/"}).then((html) => {
+    inlineCss(body, {url: ' '}).then((html) => {
       response.statusCode = 200;
       response.setHeader('Content-Type', 'text/html');
       response.end(html);
