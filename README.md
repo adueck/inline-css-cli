@@ -1,6 +1,8 @@
 # inline-css-cli
 
-A simple CLI wrapper to inline css through stdin - stdout
+A simple CLI wrapper for [inline-css](https://www.npmjs.com/package/inline-css). For inlining html through stdin - stdout.
+
+This is useful if you want to inline files from the command line, or use it programattically in non-JS environments.
 
 ### Installation
 
