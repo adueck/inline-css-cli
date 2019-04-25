@@ -25,7 +25,9 @@ output (to stdout)
 <html><body><p style="color: red;">Hello World</p></body></html>
 ```
 
-### Bonus:
+Want to use this programatically from a different environment but want a faster response? 
+
+### Bonus HTTP Server:
 
 You can also run 
 
