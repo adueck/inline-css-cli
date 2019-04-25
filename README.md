@@ -33,4 +33,13 @@ You can also run
 node http-index.js
 ```
 
-To get a local http server that will inline the html you send in a http request body.
+To get a http server that will inline the html you send in a http request body.
+
+```
+curl -d "<html><body><p style='color: red;'>Hello World</p></body></html>" -X POST http://localhost.8081/
+```
+
+Response:
+```
+<html><body><p style="color: red;">Hello World</p></body></html>
+```
