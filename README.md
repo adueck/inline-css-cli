@@ -16,13 +16,13 @@ npm link
 ### Usage
 
 ```
-$ echo "<html><style>p { color: red; }</style><body><p>Hello World</p></body></html>" | inline-css
+$ echo "<style>p { color: red; }</style><p>Hello World</p>" | inline-css
 ```
 
 output (to stdout)
 
 ```
-<html><body><p style="color: red;">Hello World</p></body></html>
+<p style="color: red;">Hello World</p>
 ```
 
 Want to use this programatically from a different environment but want a faster response? 
@@ -38,10 +38,10 @@ node http-index.js
 To get a http server that will inline the html you send in a http request body.
 
 ```
-curl -d "<html><body><p style='color: red;'>Hello World</p></body></html>" -X POST http://localhost:8081/
+curl -d "<style>p{color:red;}</style><p>Hello World</p>" -X POST http://localhost:8081/
 ```
 
 Response:
 ```
-<html><body><p style="color: red;">Hello World</p></body></html>
+<p style="color: red;">Hello World</p>
 ```
