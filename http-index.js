@@ -13,4 +13,7 @@ http.createServer((request, response) => {
       response.end(html);
     });
   });
-}).listen(8081);
+}).listen(8081, () => {
+  console.log("server ready on http://localhost:8081");
+  console.log("POST html for inlining in the request body");
+});
