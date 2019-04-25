@@ -14,10 +14,3 @@ http.createServer((request, response) => {
     });
   });
 }).listen(8081);
-
-// inlineCss(req.body, {url: "https://example.com/"}).then((html) => {
-//   const responseBody = { headers, method, url, body };
-//   res.end(html);
-// });
-
-
