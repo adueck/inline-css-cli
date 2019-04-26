@@ -1,9 +1,14 @@
 #!/usr/bin/env node
 
-var inlineCss = require('inline-css');
-var getStdin = require('get-stdin');
+const inlineCss = require('inline-css');
+const getStdin = require('get-stdin');
+const options = {
+	url: " ",
+	preserveMediaQueries: true,
+	applyTableAttributes: true,
+};
 
 getStdin().then(stdin => {
-	inlineCss(stdin, { url: ' ' }).then(console.log);
+	inlineCss(stdin, options).then(console.log);
 });
 
